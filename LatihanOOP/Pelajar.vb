@@ -27,15 +27,17 @@
     End Function
 
     Public Function Ambilan() As String
-        Dim strTahun As String = strNoMatrik.Substring(5, 2)
+        Dim strTahun As String = strNoMatrik.Substring(5, 3)
         Dim strSesi As String = strNoMatrik.Substring(8, 1)
 
-        If strTahun = "19" And strSesi = "1" Then
-            Return "Jun 2019"
-        ElseIf strTahun = "19" And strSesi = "2" Then
-            Return "Dec 2019"
+        If strTahun = "19F" Then
+            If strSesi = "1" Then
+                Return "Jun 2019"
+            ElseIf strSesi = "2" Then
+                Return "Dec 2019"
+            End If
         Else
-            Return "Not 2019"
+            Return "Not Sesi 2019"
         End If
     End Function
 End Class

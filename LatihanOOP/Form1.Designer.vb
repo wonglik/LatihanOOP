@@ -44,6 +44,7 @@ Partial Class Form1
         '
         'txtNoMatrik
         '
+        Me.txtNoMatrik.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtNoMatrik.Location = New System.Drawing.Point(12, 28)
         Me.txtNoMatrik.MaxLength = 12
         Me.txtNoMatrik.Name = "txtNoMatrik"
